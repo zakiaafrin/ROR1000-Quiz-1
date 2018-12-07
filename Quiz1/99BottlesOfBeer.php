@@ -1,20 +1,21 @@
 <?php
-
 $title = '99 Bottles of Beer<hr>';
 function song() {
     for ($bottles = 99; $bottles > 0; $bottles--) {
-        if ($bottles > 1) {
+        if ($bottles > 2) {
             echo $bottles . " bottles of beer on the wall, " . $bottles . " bottles of beer. ";
             echo "Take one down and pass it around, " . ($bottles - 1) . " bottles of beer on the wall.</br>";
+            echo '<br/>';
+        } else if ($bottles > 1) {
+            echo $bottles . " bottles of beer on the wall, " . $bottles . " bottles of beer. ";
+            echo "Take one down and pass it around, " . ($bottles - 1) . " bottle of beer on the wall.</br>";
             echo '<br/>';
         } else if ($bottles == 1) {
             echo $bottles . " bottle of beer on the wall, " . $bottles . " bottle of beer. Take it down and pass it around, no more bottles of beer on the wall.</br>";
             echo '<br/>';
         }
-
     }
     echo "No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.";
-
 }
 ?>
 
