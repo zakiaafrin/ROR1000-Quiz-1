@@ -2,22 +2,22 @@
 $title = '99 Bottles of Beer<hr>';
 function song() {
     echo "<font size='4'>"; 
-    for ($bottles = 99; $bottles > 0; $bottles--) {   
+    for ($i = 99; $i > 0; $i--) {   
         echo "<font color='#8A2BE2'>";   
-        if ($bottles > 2) { 
-            if(($bottles % 2) === 0){
+        if ($i > 2) { 
+            if(($i % 2) === 0){
                 echo "<font color='#FF00FF'>";
             } 
-            echo $bottles . " bottles of beer on the wall, " . $bottles . " bottles of beer. ";
-            echo "Take one down and pass it around, " . ($bottles - 1) . " bottles of beer on the wall.</br>";
+            echo "$i bottles of beer on the wall, $i bottles of beer. ";
+            echo "Take one down and pass it around, " . ($i - 1) . " bottles of beer on the wall.</br>";
             echo '<br/>';
-        } else if ($bottles > 1) {
+        } else if ($i > 1) {
             echo "<font color='#FF00FF'>";
-            echo $bottles . " bottles of beer on the wall, " . $bottles . " bottles of beer. ";
-            echo "Take one down and pass it around, " . ($bottles - 1) . " bottle of beer on the wall.</br>";  
+            echo "$i bottles of beer on the wall, $i bottles of beer. ";
+            echo "Take one down and pass it around, " . ($i - 1) . " bottle of beer on the wall.</br>";  
             echo '<br/>';
-        } else if ($bottles === 1) {  
-            echo $bottles . " bottle of beer on the wall, " . $bottles . " bottle of beer. Take it down and pass it around, no more bottles of beer on the wall.</br>";
+        } else if ($i === 1) {  
+            echo "$i bottle of beer on the wall, $i bottle of beer. Take it down and pass it around, no more bottles of beer on the wall.</br>";
             echo '<br/>';
         }
     } 
