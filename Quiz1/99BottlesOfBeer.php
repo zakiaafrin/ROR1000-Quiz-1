@@ -1,4 +1,5 @@
 <?php
+define('i', '99');
 $title = '99 Bottles of Beer<hr>';
 function song() {
     echo "<font size='4'>"; 
