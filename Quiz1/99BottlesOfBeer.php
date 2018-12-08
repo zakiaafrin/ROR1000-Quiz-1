@@ -9,9 +9,9 @@ for ($i=99; $i>=0; $i--) {
     echo "<font color = '#FF00FF'>";
    }
    if ($i === 0) echo "No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.";
-   elseif ($i === 1) echo "$i bottle of beer on the wall, $i bottle of beer. Take it down and pass it around, no more bottles of beer on the wall.<br><br>";
-   elseif ($i === 2) echo "$i bottles of beer on the wall, $i bottles of beer. Take one down and pass it around, " . ($i - 1) . " bottle of beer on the wall.<br><br>";
-   else echo "$i bottles of beer on the wall, $i bottles of beer. Take one down and pass it around, " . ($i - 1) . " bottles of beer on the wall.<br><br>";
+   elseif ($i === 1) echo "$i bottle of beer on the wall, $i bottle of beer. Take it down and pass it around, no more bottles of beer on the wall.<br/><br/>";
+   elseif ($i === 2) echo "$i bottles of beer on the wall, $i bottles of beer. Take one down and pass it around, " . ($i - 1) . " bottle of beer on the wall.<br/><br/>";
+   else echo "$i bottles of beer on the wall, $i bottles of beer. Take one down and pass it around, " . ($i - 1) . " bottles of beer on the wall.<br/><br/>";
     }
 }
 ?>
